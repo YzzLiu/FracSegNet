@@ -1,4 +1,4 @@
-# FracSegNet(2023.3.7)
+# FracSegNet(updated in 2023.3.7)
 
 ## 1.Pelvic Fracture DataSets
 
