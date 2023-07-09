@@ -1,4 +1,4 @@
-# FracSegNet(updated in 2023.3.7)
+# FracSegNet(updated in 2023.7.9)
 
 ## 1.Pelvic Fracture DataSets
 
@@ -7,3 +7,6 @@ We will soon release a medical imaging database of pelvic fractures, which will 
 ## 2.Pelvic Fracture Segmentation Network
 
 We will soon launched a Pelvic Fracture Segmentation Neural Network.
+
+## Paper early accepted
+
