@@ -9,7 +9,11 @@ We design and integrate a distance-weighted loss into a 3D U-net to improve accu
 
 ## 1.Pelvic Fracture DataSets
 
-We will soon release a medical imaging database of pelvic fractures, which will include clinical CT images and expert annotated data from multiple sets of desensitized and ethically reviewed pelvic fractures. We hope it can contribute to the progress and development of community.
+The first version of the pelvic fracture segmentation dataset has been updated. In this dataset, we provide detailed annotations of fracture segmentation for 100 patients. For each patient, we offer CT data (with the background masked out) for the left ilium, right ilium, and sacrum, along with their annotations. 
+
+Data Discription: [DataSet for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/DataSet)
+
+Paper link: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_30
 
 ## 2.Pelvic Fracture Segmentation Network
 
