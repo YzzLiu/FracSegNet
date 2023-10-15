@@ -41,6 +41,31 @@ DataSet for Pelvic Fracture Segmentation
 |-- ... (other directories and files)
 ```
 
+**File Descriptions:**
+- `XXX_SA.nii.gz`: Represents the segmented anatomical structure of the sacrum area from the CT scan.
+- `XXX_SA_mask.nii.gz`: Represents the segmented fracture in the sacrum area.
+- `XXX_RI.nii.gz`: Represents the segmented anatomical structure of the right ilium from the CT scan.
+- `XXX_RI_mask.nii.gz`: Represents the segmented fracture in the right ilium.
+- `XXX_LI.nii.gz`: Represents the segmented anatomical structure of the left ilium from the CT scan.
+- `XXX_LI_mask.nii.gz`: Represents the segmented fracture in the left ilium.
+
+`XXX` denotes the patient ID.
+
+## Usage
+
+1. Download the dataset from [DataSet of Pelvic Frcature Segmenation(Google Dirve)](https://drive.google.com/file/d/18xAU3-VJdx1QRP2W2eOqE3NCkbSPP2XG/view?usp=sharing).
+2. Implement fracture segmentation algorithms.(Our code is currently being organized and revised, and will be open-sourced soon.)
+3. Use our dataset for training/testing purposes, respecting the terms of the license.
+
+## License
+
+This dataset is released under [LICENSE NAME]. Ensure you understand its terms and conditions before using the data.
+
+## Citation
+
+If you find this dataset useful in your research, please consider citing:
+
+
 
 
 
