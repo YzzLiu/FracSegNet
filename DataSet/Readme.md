@@ -19,7 +19,7 @@ We collated a dataset encompassing 100 preoperative CT scans, representing an ar
 ## Dataset Structure and Contents
 
 The dataset is organized in a structured folder system for easy navigation and utilization. Here's an overview:
-
+```
 DataSet for Pelvic Fracture Segmentation
 |
 |-- 001
@@ -39,7 +39,7 @@ DataSet for Pelvic Fracture Segmentation
 |   |-- 002_LI_mask.nii.gz
 |
 |-- ... (other directories and files)
-
+```
 
 
 
