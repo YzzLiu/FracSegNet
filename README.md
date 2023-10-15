@@ -20,4 +20,9 @@ Paper link: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_30
 
 We will soon launched a Pelvic Fracture Segmentation Neural Network.
 
+## Citation
 
+If you find our work is useful in your research, please consider citing:
+```
+Liu, Y. et al. (2023). Pelvic Fracture Segmentation Using a Multi-scale Distance-Weighted Neural Network. In: Greenspan, H., et al. Medical Image Computing and Computer Assisted Intervention – MICCAI 2023. MICCAI 2023. Lecture Notes in Computer Science, vol 14228. Springer, Cham. https://doi.org/10.1007/978-3-031-43996-4_30
+```
