@@ -14,7 +14,7 @@ In our quest to advance pelvic research, especially in reduction planning, we ha
 
 ## Dataset Description
 
-We collated a dataset encompassing 100 preoperative CT scans, representing an array of prevalent pelvic fractures. These scans have been sourced from a pool of 100 patients (ranging between 18-74 years of age, including 41 females) slated for pelvic reduction surgery at Beijing Jishuitan Hospital between the years 2018-2022. These compilations received the green light under IRB approval (202009-04). All CT scans were captured utilizing a Toshiba Aquilion scanner.
+We collated a dataset encompassing 100 preoperative CT scans, representing an array of prevalent pelvic fractures. These scans have been sourced from a pool of 100 patients (ranging between 18-74 years of age, including 41 females) slated for pelvic reduction surgery at Beijing Jishuitan Hospital between the years 2018-2022. All CT scans were captured utilizing a Toshiba Aquilion scanner.
 
 ## Dataset Structure and Contents
 
@@ -54,16 +54,20 @@ DataSet for Pelvic Fracture Segmentation
 ## Usage
 
 1. Download the dataset from [DataSet of Pelvic Frcature Segmenation(Google Dirve)](https://drive.google.com/file/d/18xAU3-VJdx1QRP2W2eOqE3NCkbSPP2XG/view?usp=sharing).
-2. Implement fracture segmentation algorithms.(Our code is currently being organized and revised, and will be open-sourced soon.)
+2. Implement [fracture segmentation algorithms](). (Our code is currently being organized and revised, and will be open-sourced soon! If all goes as planned, the revisions will be completed by October 31st, 2023. Thank you for your patience!)
 3. Use our dataset for training/testing purposes, respecting the terms of the license.
 
 ## License
 
-This dataset is released under [LICENSE NAME]. Ensure you understand its terms and conditions before using the data.
+This dataset is released under IRB approval (202009-04). Ensure you understand its terms and conditions before using the data.
 
 ## Citation
 
 If you find this dataset useful in your research, please consider citing:
+```
+Liu, Y. et al. (2023). Pelvic Fracture Segmentation Using a Multi-scale Distance-Weighted Neural Network. In: Greenspan, H., et al. Medical Image Computing and Computer Assisted Intervention – MICCAI 2023. MICCAI 2023. Lecture Notes in Computer Science, vol 14228. Springer, Cham. https://doi.org/10.1007/978-3-031-43996-4_30
+```
+
 
 
 
