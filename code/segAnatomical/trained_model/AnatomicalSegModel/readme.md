@@ -1,4 +1,4 @@
-# AnatomicalSegModel - Pelvic Fracture Segmentation Model
+# AnatomicalSegModel - Pelvic Segmentation Model
 
 ## Overview
 
