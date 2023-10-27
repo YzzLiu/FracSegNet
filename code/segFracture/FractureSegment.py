@@ -36,7 +36,7 @@ def main():
     model_path = get_model_path(model_name)
     parent_directory = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     print(parent_directory)
-    work_dir = os.path.join(parent_directory, "testData")
+    work_dir = os.path.join(parent_directory, "DataSet", "testData")
     work_dir_list = os.listdir(work_dir)
     # filter for dir
     work_dir_list = [name for name in work_dir_list if os.path.isdir(os.path.join(work_dir, name))]
