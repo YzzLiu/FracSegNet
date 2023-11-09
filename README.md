@@ -1,7 +1,7 @@
 # FracSegNet(updated in 2023.10.15)
 2023-10-15: updated [DataSet for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/DataSet)
 
-2023-10-15: updated [Code for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/code)
+2023-10-31: updated [Code for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/code)
 
 # What is FracSegNet?
 Pelvic fracture is a severe type of high-energy injury. Segmentation of pelvic fractures from 3D CT images is important for trauma diagnosis, evaluation, and treatment planning. Manual delineation of the fracture surface can be done in a slice-by-slice fashion but is slow and error-prone. Automatic fracture segmentation is challenged by the complex structure of pelvic bones and the large variations in fracture types and shapes. 
