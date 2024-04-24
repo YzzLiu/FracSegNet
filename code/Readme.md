@@ -1,6 +1,44 @@
 # How to use FracSegNet?
-# Table of Content
-- [Installation](#installation)
-- 
-# Installation
 
+FracSegNet is a specialized neural network model tailored for fracture segmentation in medical imaging. This project adapts and extends the nn-UNet framework to enhance fracture detection performance with advanced features such as distance map weight calculations and optimized 3D UNet architectures.
+
+## Table of Contents
+- [Installation](##installation)
+- [Usage](##usage)
+	*[Experiment Planning and Preprocessing](### Experiment Planning and Preprocessing)
+	*[Model Training](### Model Training)
+	*[Run inference](### Run inference)
+
+
+## Installation
+
+FracSegNet is developed and tested on Linux (Ubuntu 20.04) with a minimum GPU requirement of 10 GB VRAM.
+
+1. Install PyTorch. Follow the installation instructions on the [PyTorch website](https://pytorch.org/get-started/locally/):
+```bash
+pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0
+```
+2. Install nn-UNet, which is used as a standardized baseline for 3D UNet and to quickly set up FracSegNet:
+```bash
+pip install nnunet==1.7.0
+```
+3. Overwrite the nn-UNet installation with the FracSegNet files:
+```bash
+cp -r .../FracSegNet/* .../envs_name/python3.7/site-packages/nnunet/ 
+```
+## Usage
+### Experiment Planning and Preprocessing
+Create a new task for training FracSegNet. Before training, the dataset must be normalized (standardized, resampled, and distance map weights calculated). Execute the following command to prepare the dataset:
+```bash
+nnUNet_plan_and_preprocess -t XXX --verify_dataset_integrity
+```
+### Model Training
+To train the FracSegNet model, use the command below:
+```bash
+nnUNet_train 3d_fullres nnUNetTrainerV2 Taskxxx_taskName FOLD
+```
+### Run inference
+You can directly use the inference instructions inside nn-UNet:
+```bash
+nnUNet_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -t TASK_NAME_OR_ID -m MODEL_FOLDER
+```
