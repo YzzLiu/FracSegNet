@@ -3,11 +3,11 @@
 FracSegNet is a specialized neural network model tailored for fracture segmentation in medical imaging. This project adapts and extends the nn-UNet framework to enhance fracture detection performance with advanced features such as distance map weight calculations and optimized 3D UNet architectures.
 
 ## Table of Contents
-  - [Installation](##installation)
-  - [Usage](##usage)
-    * [Experiment Planning and Preprocessing](###experiment-planning-and-preprocessing)
-    * [Model Training](###model-training)
-    * [Run inference](###run-inference)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    * [Experiment Planning and Preprocessing](#experiment-planning-and-preprocessing)
+    * [Model Training](#model-training)
+    * [Run inference](#run-inference)
 
 
 ## Installation
