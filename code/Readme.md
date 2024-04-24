@@ -40,5 +40,5 @@ nnUNet_train 3d_fullres nnUNetTrainerV2 Taskxxx_taskName FOLD
 ### Run inference
 You can directly use the inference instructions inside nn-UNet:
 ```bash
-nnUNet_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -t TASK_NAME_OR_ID -m MODEL_FOLDER
+nnUNet_predict -m 3d_fullres -t XXX -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```
