@@ -24,7 +24,7 @@ pip install nnunet==1.7.0
 ```
 3. Overwrite the nn-UNet installation with the FracSegNet files:
 ```bash
-cp -r .../FracSegNet/* .../envs_name/python3.7/site-packages/nnunet/ 
+cp -r ...Training/FracSegNet/* .../envs_name/python3.7/site-packages/nnunet/ 
 ```
 ## Usage
 ### Experiment Planning and Preprocessing
