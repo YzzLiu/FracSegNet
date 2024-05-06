@@ -1,18 +1,3 @@
-#    Copyright 2020 Division of Medical Image Computing, German Cancer Research Center (DKFZ), Heidelberg, Germany
-#
-#    Licensed under the Apache License, Version 2.0 (the "License");
-#    you may not use this file except in compliance with the License.
-#    You may obtain a copy of the License at
-#
-#        http://www.apache.org/licenses/LICENSE-2.0
-#
-#    Unless required by applicable law or agreed to in writing, software
-#    distributed under the License is distributed on an "AS IS" BASIS,
-#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#    See the License for the specific language governing permissions and
-#    limitations under the License.
-
-
 import shutil
 from collections import OrderedDict
 from multiprocessing import Pool
@@ -526,6 +511,30 @@ class nnUNetTrainer(NetworkTrainer):
                                       mixed_precision=mixed_precision)
         self.network.train(current_mode)
         return ret
+
+    def predict_preprocessed_data_return_softmax(self, data, do_mirroring, num_repeats, use_train_mode, batch_size,
+                                                 mirror_axes, tiled, tile_in_z, step, min_size, use_gaussian):
+        """
+        Don't use this. If you need softmax output, use preprocess_predict_nifti and set softmax_output_file. ### todo:???
+        :param data:
+        :param do_mirroring:
+        :param num_repeats:
+        :param use_train_mode:
+        :param batch_size:
+        :param mirror_axes:
+        :param tiled:
+        :param tile_in_z:
+        :param step:
+        :param min_size:
+        :param use_gaussian:
+        :param use_temporal:
+        :return:
+        """
+        assert isinstance(self.network, (SegmentationNetwork, nn.DataParallel))
+        return self.network.predict_3D_inference(data, do_mirroring, num_repeats, use_train_mode, batch_size, mirror_axes,
+                                       tiled, tile_in_z, step, min_size, use_gaussian=use_gaussian,
+                                       pad_border_mode=self.inference_pad_border_mode,
+                                       pad_kwargs=self.inference_pad_kwargs)[2]
 
     def validate(self, do_mirroring: bool = True, use_sliding_window: bool = True, step_size: float = 0.5,
                  save_softmax: bool = True, use_gaussian: bool = True, overwrite: bool = True,

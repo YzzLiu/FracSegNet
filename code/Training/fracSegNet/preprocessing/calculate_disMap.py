@@ -6,7 +6,6 @@ def bool_calculate_kernel(img_cal, length, width, height):
     j = width
     k = height
     # zero_kernel = np.zeros((3,3,3))
-    # zero_kernel[0,0,0] =
     kernel_data = [img_cal[i - 1, j - 1, k - 1], img_cal[i - 1, j - 1, k], img_cal[i - 1, j - 1, k + 1],
                    img_cal[i - 1, j, k - 1], img_cal[i - 1, j, k], img_cal[i - 1, j, k + 1],
                    img_cal[i - 1, j + 1, k - 1], img_cal[i - 1, j + 1, k], img_cal[i - 1, j + 1, k + 1],
@@ -42,8 +41,6 @@ def calculate_edge(seg_label):
     # print(img_length, img_width, img_height)
     # ergodic the matrix
     for i in range(1, img_length - 1):
-        # print('\r', "--------" + "Progress of search:" + str(round(i * 100 / img_length,2)) + "%" + "--------", end='',
-        #       flush=True)
         for j in range(1, img_width - 1):
             for k in range(1, img_height - 1):
                 # print(i, j, k)
@@ -109,12 +106,6 @@ def calculate_voxels_distance(edge_indexes_arr, length, width, height):
     distance = np.sqrt(min(distance_matrix))
     # print(distance)
     return distance
-
-def sigmoid_function(z):
-    fz = []
-    for num in z:
-        fz.append(0.2+0.8 * 1 / (1 + math.exp(num-5)))
-    return fz
 
 def disMap_weight_relu(distance_map):
     matrix_relu = np.zeros_like(distance_map)

@@ -1,18 +1,3 @@
-#    Copyright 2020 Division of Medical Image Computing, German Cancer Research Center (DKFZ), Heidelberg, Germany
-#
-#    Licensed under the Apache License, Version 2.0 (the "License");
-#    you may not use this file except in compliance with the License.
-#    You may obtain a copy of the License at
-#
-#        http://www.apache.org/licenses/LICENSE-2.0
-#
-#    Unless required by applicable law or agreed to in writing, software
-#    distributed under the License is distributed on an "AS IS" BASIS,
-#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#    See the License for the specific language governing permissions and
-#    limitations under the License.
-
-
 import sys
 from copy import deepcopy
 from typing import Union, Tuple
@@ -168,13 +153,6 @@ def remove_component_and_save(segmentation_softmax: Union[str, np.ndarray], out_
     else: 
         sitk.WriteImage(seg_resized_itk, out_fname)
         save_STL_from_ITKImage(seg_resized_itk, out_fname[:-7]+".stl")
-
-
-    # if (non_postprocessed_fname is not None) and (seg_postprogess_fn is not None):
-    #     seg_resized_itk = sitk.GetImageFromArray(seg_old_size.astype(np.uint8))
-    #     seg_resized_itk.SetSpacing(properties_dict['itk_spacing'])
-    #     seg_resized_itk.SetOrigin(properties_dict['itk_origin'])
-    #     seg_resized_itk.SetDirection(properties_dict['itk_direction'])
     
     return seg_resized_itk
         
