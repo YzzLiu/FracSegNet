@@ -54,7 +54,7 @@ DataSet for Pelvic Fracture Segmentation
 ## Usage
 
 1. Download the dataset from [DataSet of Pelvic Frcature Segmenation(Google Dirve)](https://drive.google.com/file/d/18xAU3-VJdx1QRP2W2eOqE3NCkbSPP2XG/view?usp=sharing).
-2. Implement [fracture segmentation algorithms](). (Our code is currently being organized and revised, and will be open-sourced soon! If all goes as planned, the revisions will be completed by October 31st, 2023. Thank you for your patience!)
+2. Implement [fracture segmentation algorithms]().
 3. Use our dataset for training/testing purposes, respecting the terms of the license.
 
 ## License
