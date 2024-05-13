@@ -8,6 +8,7 @@ FracSegNet is a specialized neural network model tailored for fracture segmentat
     * [Experiment Planning and Preprocessing](#experiment-planning-and-preprocessing)
     * [Model Training](#model-training)
     * [Run inference](#run-inference)
+    * [Using our models for quick start](#using-our-models-for-quick-start)
 
 
 ## Installation
