@@ -30,15 +30,25 @@ cp -r ...Training/FracSegNet/* .../envs_name/python3.7/site-packages/nnunet/
 ### Experiment Planning and Preprocessing
 Create a new task for training FracSegNet. Before training, the dataset must be normalized (standardized, resampled, and distance map weights calculated). Execute the following command to prepare the dataset:
 ```bash
-nnUNet_plan_and_preprocess -t XXX --verify_dataset_integrity
+nnUNet_plan_and_preprocess -t TASK_ID --verify_dataset_integrity
 ```
 ### Model Training
 To train the FracSegNet model, use the command below:
 ```bash
-nnUNet_train 3d_fullres nnUNetTrainerV2 Taskxxx_taskName FOLD
+nnUNet_train 3d_fullres nnUNetTrainerV2 TASK_ID_taskName FOLD
 ```
 ### Run inference
 You can directly use the inference instructions inside nn-UNet:
 ```bash
-nnUNet_predict -m 3d_fullres -t XXX -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
+nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
+```
+## Using our models for quick start
+1. Copy Anatomical Segmentation Model and fracture Segmentation Model into NNUNET_RESULTS_FOLDER
+2. Execute the anatomical segmentation command:
+```bashe
+nnUNet_predict -m 3d_cascade_fullres --disable_tta -t TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
+```
+3. Execute the fracture segmentation command:
+```bashe
+nnUNet_predict -m 3d_fullres TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
 ```
