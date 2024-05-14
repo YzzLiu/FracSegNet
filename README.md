@@ -20,7 +20,7 @@ Data Discription: [DataSet for Pelvic Fracture Segmentation](https://github.com/
 
 Paper link: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_30
 
-150 CT DataSet: [TMI-PENGWIN DataSet](https://doi.org/10.5281/zenodo.10927452)
+TMI PENGWIN DataSet: [TMI-PENGWIN DataSet](https://doi.org/10.5281/zenodo.10927452)
 
 ## 2.Pelvic Fracture Segmentation Network
 
