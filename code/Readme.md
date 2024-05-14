@@ -49,7 +49,8 @@ nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```bashe
 nnUNet_predict -m 3d_cascade_fullres --disable_tta -t TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
 ```
-3. Execute the fracture segmentation command:
+3. Extract CT Regions from anatomical segmentation result:
+4. Execute the fracture segmentation command:
 ```bashe
 nnUNet_predict -m 3d_fullres TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
 ```
