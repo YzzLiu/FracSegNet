@@ -47,7 +47,7 @@ To infer the result of fracture segmentation from extracted CT region, use the c
 nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```
 ## Using our models to extract fragments from CT images:
-1. Download [Anatomical Segmentation and fracture Segmentation Models](tmp_url).
+1. Download [Anatomical Segmentation and fracture Segmentation Models](https://github.com/YzzLiu/FracSegNet/tree/main/code/inference).
 2. Copy Anatomical Segmentation and fracture Segmentation Models into NNUNET_RESULTS_FOLDER.
 3. Execute the anatomical segmentation command:
 ```bashe
