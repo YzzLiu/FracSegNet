@@ -37,4 +37,7 @@ def saveDiffFrac(fileName, labelName):
 
 
 if __name__ == "__main__":
-    saveDiffFrac()
+    ct_name = "/usr/erickliu/image.nii.gz"
+    mask_name = "/usr/erick_data/mask.nii.gz"
+    
+    saveDiffFrac(ct_name,mask_name)
