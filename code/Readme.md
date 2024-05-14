@@ -44,7 +44,7 @@ You can directly use the inference instructions inside nn-UNet:
 nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```
 ## Using our models for quick start
-1. Copy Anatomical Segmentation Model and fracture Segmentation Model into NNUNET_RESULTS_FOLDER
+1. Copy Anatomical Segmentation and fracture Segmentation Models into NNUNET_RESULTS_FOLDER
 2. Execute the anatomical segmentation command:
 ```bashe
 nnUNet_predict -m 3d_cascade_fullres --disable_tta -t TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
