@@ -37,11 +37,12 @@ DataSet for Pelvic Fracture Segmentation
 ```
 **File Descriptions:**
 This repository contains the training set of 100 CT scans with pelvic fractures and their ground-truth segmentation labels. The images and labels are stored in mha format. Each bone anatomy (sacrum, left hipbone, right hipbone) has up to 10 fragments. Bone that does not present any fracuture has only one fragment, which is itself. Label assignment: 0 = background, 1-10 = sacrum fragment, 11-20 = left hipbone fragment, 21-30 = right hipbone fragment. 
+Note: We are using this dataset to host the Pelvic Bone Fragments with Injuries Segmentation (PENGWIN) Challenge in MICCAI 2024, and the remaining sets of validation and evaluation data will be released after the competition. Welcome to [PENGWIN challenge](https://pengwin.grand-challenge.org/)!
 
 ## Usage
 
 1. Download the dataset from [DataSet of Pelvic Frcature Segmenation(zenodo)](https://zenodo.org/api/records/10927452/files-archive).
-2. Implement [fracture segmentation algorithms]().
+2. Implement [fracture segmentation algorithms](/code).
 3. Use our dataset for training/testing purposes, respecting the terms of the license.
 
 ## License
