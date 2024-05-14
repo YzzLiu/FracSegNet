@@ -21,7 +21,7 @@ def saveDiffFrac(fileName, labelName):
     # ct_label_img = sitk.ReadImage(maskName)
     ct_origin_img = sitk.ReadImage(fileName)
     ct_label_img = sitk.ReadImage(labelName)
-    # label = 1: sacrum / 2: Left iliac / 3:Right iliac
+    # label = 1: Sacrum / 2: Left Hip / 3:Right Hip
     # =============================================================================================
     # ======================extract the single fracture and Rescale Intensity======================
     # =============================================================================================
