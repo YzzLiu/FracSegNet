@@ -1,4 +1,4 @@
-# FracSegNet(updated in 2023.10.15)
+# FracSegNet(updated in 2024.05.14)
 2023-10-15: updated [DataSet for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/DataSet)
 
 2023-10-31: updated [Code for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/code)
