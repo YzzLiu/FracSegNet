@@ -53,7 +53,7 @@ nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```bashe
 nnUNet_predict -m 3d_cascade_fullres --disable_tta -t TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
 ```
-4. Extract CT Regions from anatomical segmentation result:
+4. Extract CT Regions from anatomical segmentation result using [extract_ct_regions.py](https://github.com/YzzLiu/FracSegNet/tree/main/code/inference)
 5. Execute the fracture segmentation command:
 ```bashe
 nnUNet_predict -m 3d_fullres TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
