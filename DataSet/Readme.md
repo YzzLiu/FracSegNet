@@ -8,13 +8,14 @@ Pelvic fracture is a severe type of high-energy injury. The segmentation of pelv
 
 In this study, we introduced a novel deep-learning technique for the automatic segmentation of pelvic fractures. Our methodology comprises two sequential networks. Initially, the anatomical segmentation network sifts through the CT scans to extract the left and right ilia and sacrum. Subsequently, the fracture segmentation network isolates the fragments within each masked bone region. We integrated a distance-weighted loss into a 3D U-net to enhance accuracy near the fracture vicinity. Moreover, we utilized multi-scale deep supervision and employed a smooth transition strategy for effective training.
 
-We curated a dataset featuring 100 CT scans with fractured pelvises, each manually annotated for fractures. Through a five-fold cross-validation experiment, our method surpassed max-flow segmentation and networks devoid of distance weighting. The results exhibited a global Dice of 99.38%, a local Dice of 93.79%, and an Hausdorff distance of 17.12 mm.
+Tested on a curated dataset of 150 CTs, which we have made publicly available, our method achieves an average Dice coefficient of 0.986 and an average symmetric surface distance of 0.234 mm.
 
 In our quest to advance pelvic research, especially in reduction planning, we have made our dataset and corresponding source code accessible to the public.
 
 ## Dataset Description
 
-We collated a dataset encompassing 100 preoperative CT scans, representing an array of prevalent pelvic fractures. These scans have been sourced from a pool of 100 patients (ranging between 18-74 years of age, including 41 females) slated for pelvic reduction surgery at Beijing Jishuitan Hospital between the years 2018-2022. All CT scans were captured utilizing a Toshiba Aquilion scanner.
+We collated a dataset encompassing 150 preoperative CT scans, representing an array of prevalent pelvic fractures. These scans have been sourced from a pool of 150 patients (ranging between 16-94 years of age, including 63 females and 87 males) slated for pelvic reduction surgery at Beijing Jishuitan Hospital between the years 2017-2023. 
+By sourcing CT scans from a diverse array of machines, including a Toshiba Aquilion scanner, an United Imaging uCT 550 scanner, an United Imaging uCT 780 scanner, and a Philips Brilliance scanner, we have ensured a broad representation of imaging characteristics.
 
 ## Dataset Structure and Contents
 
@@ -22,38 +23,24 @@ The dataset is organized in a structured folder system for easy navigation and u
 ```
 DataSet for Pelvic Fracture Segmentation
 |
-|-- 001
-|   |-- 001_SA.nii.gz
-|   |-- 001_SA_mask.nii.gz
-|   |-- 001_RI.nii.gz
-|   |-- 001_RI_mask.nii.gz
-|   |-- 001_LI.nii.gz
-|   |-- 001_LI_mask.nii.gz
+|-- PENGWIN_CT_train_images
+|   |-- 001.mha
+|   |-- 002.mha
+|   |-- 003.mha
+|   |-- ...(other files)
 |
-|-- 002
-|   |-- 002_SA.nii.gz
-|   |-- 002_SA_mask.nii.gz
-|   |-- 002_RI.nii.gz
-|   |-- 002_RI_mask.nii.gz
-|   |-- 002_LI.nii.gz
-|   |-- 002_LI_mask.nii.gz
-|
-|-- ... (other directories and files)
-```
+|-- PENGWIN_CT_train_labels
+|   |-- 001.mha
+|   |-- 002.mha
+|   |-- 003.mha
+|   |-- ...(other files)
 
 **File Descriptions:**
-- `XXX_SA.nii.gz`: Represents the segmented anatomical structure of the sacrum area from the CT scan.
-- `XXX_SA_mask.nii.gz`: Represents the segmented fracture in the sacrum area.
-- `XXX_RI.nii.gz`: Represents the segmented anatomical structure of the right ilium from the CT scan.
-- `XXX_RI_mask.nii.gz`: Represents the segmented fracture in the right ilium.
-- `XXX_LI.nii.gz`: Represents the segmented anatomical structure of the left ilium from the CT scan.
-- `XXX_LI_mask.nii.gz`: Represents the segmented fracture in the left ilium.
-
-`XXX` denotes the patient ID.
+This repository contains the training set of 100 CT scans with pelvic fractures and their ground-truth segmentation labels. The images and labels are stored in mha format. Each bone anatomy (sacrum, left hipbone, right hipbone) has up to 10 fragments. Bone that does not present any fracuture has only one fragment, which is itself. Label assignment: 0 = background, 1-10 = sacrum fragment, 11-20 = left hipbone fragment, 21-30 = right hipbone fragment. 
 
 ## Usage
 
-1. Download the dataset from [DataSet of Pelvic Frcature Segmenation(Google Dirve)](https://drive.google.com/file/d/18xAU3-VJdx1QRP2W2eOqE3NCkbSPP2XG/view?usp=sharing).
+1. Download the dataset from [DataSet of Pelvic Frcature Segmenation(zenodo)](https://zenodo.org/api/records/10927452/files-archive).
 2. Implement [fracture segmentation algorithms]().
 3. Use our dataset for training/testing purposes, respecting the terms of the license.
 
