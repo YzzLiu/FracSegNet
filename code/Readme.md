@@ -33,24 +33,28 @@ Create a new task for training FracSegNet. Before training, the dataset must be 
 ```bash
 nnUNet_plan_and_preprocess -t TASK_ID --verify_dataset_integrity
 ```
-### Model Training
-To train the FracSegNet model, use the command below:
+### Anatomical Segmentation Model Training
+On the basis of [CTpelvic1K](https://github.com/MIRACLE-Center/CTPelvic1K), we continue to train the model on our PENGWIN data set to optimize the internal holes, lumbar sacralization and other problems.
+
+### Fracture Segmentation Model Training
+To train the Fracture Segmentation Model, use the command below:
 ```bash
 nnUNet_train 3d_fullres nnUNetTrainerV2 TASK_ID_taskName FOLD
 ```
 ### Run inference
-You can directly use the inference instructions inside nn-UNet:
+To infer the result of fracture segmentation from extracted CT region, use the command below:
 ```bash
 nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```
-## Using our models for quick start
-1. Copy Anatomical Segmentation and fracture Segmentation Models into NNUNET_RESULTS_FOLDER
-2. Execute the anatomical segmentation command:
+## Using our models to extract fragments from CT images:
+1. Download [Anatomical Segmentation and fracture Segmentation Models](tmp_url).
+2. Copy Anatomical Segmentation and fracture Segmentation Models into NNUNET_RESULTS_FOLDER.
+3. Execute the anatomical segmentation command:
 ```bashe
 nnUNet_predict -m 3d_cascade_fullres --disable_tta -t TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
 ```
-3. Extract CT Regions from anatomical segmentation result:
-4. Execute the fracture segmentation command:
+4. Extract CT Regions from anatomical segmentation result:
+5. Execute the fracture segmentation command:
 ```bashe
 nnUNet_predict -m 3d_fullres TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
 ```
