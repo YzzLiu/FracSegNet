@@ -9,7 +9,7 @@ FracSegNet is a specialized neural network model designed for fracture segmentat
   * [Experiment Planning and Preprocessing](#experiment-planning-and-preprocessing)
   * [Model Training](#model-training)
   * [Run Inference](#run-inference)
-  * [Extracting Fragments from CT Images](#extracting-fragments-from-ct-images)
+  * [Using Pre-trained Models to Extract Fragments from CT Images](#using-pre-trained-models-to-extract-fragments-from-ct-images)
 
 ## Installation
 
@@ -56,7 +56,7 @@ To perform fracture segmentation on extracted CT regions, use the following comm
 nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
 ```
 
-### Extracting Fragments from CT Images
+### Using Pre-trained Models to Extract Fragments from CT Images
 1. **Download Models**  
    Download the [Anatomical Segmentation and Fracture Segmentation Models](https://github.com/YzzLiu/FracSegNet/tree/main/code/inference).
 2. **Copy Models**  
