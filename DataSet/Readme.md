@@ -53,7 +53,7 @@ This dataset is released under IRB approval (202009-04). Ensure you understand i
 ## Citation
 
 If you find this dataset useful in your research, please consider citing:
-
+```
 @InProceedings{10.1007/978-3-031-43996-4_30,
 author="Liu, Yanzhen and Yibulayimu, Sutuke and Sang, Yudi and Zhu, Gang and Wang, Yu and Zhao, Chunpeng and Wu, Xinbao",
 title="Pelvic Fracture Segmentation Using a Multi-scale Distance-Weighted Neural Network",
