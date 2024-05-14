@@ -22,9 +22,9 @@ Paper link: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_30
 
 TMI PENGWIN DataSet: [TMI-PENGWIN DataSet](https://doi.org/10.5281/zenodo.10927452)
 
-## 2.Pelvic Fracture Segmentation Network
+## 2. Usage
 
-The prediction code for the pelvic fracture segmentation network has been updated.
+You can find the training and testing methods for FracSegNet at [Training and inference](https://github.com/YzzLiu/FracSegNet/tree/main/code). Additionally, we provide the latest training models for your convenience.
 
 ## Citation
 
