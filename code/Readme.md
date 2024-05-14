@@ -6,9 +6,9 @@ FracSegNet is a specialized neural network model tailored for fracture segmentat
   - [Installation](#installation)
   - [Usage](#usage)
     * [Experiment Planning and Preprocessing](#experiment-planning-and-preprocessing)
-    * [Model Training](#model-training)
+    * [Model Training](#run-training)
     * [Run inference](#run-inference)
-    * [Using our models for quick start](#using-our-models-for-quick-start)
+    * [Using our models to extract fragments from CT images](#using-our-models-to-extract-fragments-from-CT-images)
 
 
 ## Installation
@@ -27,7 +27,7 @@ pip install nnunet==1.7.0
 ```bash
 cp -r ...Training/FracSegNet/* .../envs_name/python3.7/site-packages/nnunet/ 
 ```
-## Usage
+## Run Training
 ### Experiment Planning and Preprocessing
 Create a new task for training FracSegNet. Before training, the dataset must be normalized (standardized, resampled, and distance map weights calculated). Execute the following command to prepare the dataset:
 ```bash
