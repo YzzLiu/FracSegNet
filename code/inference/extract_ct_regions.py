@@ -37,7 +37,10 @@ def saveDiffFrac(fileName, labelName):
 
 
 if __name__ == "__main__":
-    ct_name = "/usr/erickliu/image.nii.gz"
-    mask_name = "/usr/erick_data/mask.nii.gz"
-    
-    saveDiffFrac(ct_name,mask_name)
+    parser = argparse.ArgumentParser(description='Process CT images to extract and save different fractures.')
+    parser.add_argument('-i', '--input', required=True, help='Path to the input CT image file (e.g., ct_name).')
+    parser.add_argument('-o', '--output', required=True, help='Path to the label/mask image file (e.g., mask_name).')
+
+    args = parser.parse_args()
+
+    saveDiffFrac(args.input, args.output)
