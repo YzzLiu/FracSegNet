@@ -40,7 +40,7 @@ This repository contains the training set of 100 CT scans with pelvic fractures 
 
 **Label assignment:** 0 = background, 1-10 = sacrum fragment, 11-20 = left hipbone fragment, 21-30 = right hipbone fragment. 
 
-**Note: We are using this dataset to host the Pelvic Bone Fragments with Injuries Segmentation (PENGWIN) Challenge in MICCAI 2024, and the remaining sets of validation and evaluation data will be released after the competition. Welcome to [PENGWIN challenge](https://pengwin.grand-challenge.org/)!**
+**Note: We are using this dataset to host the Pelvic Bone Fragments with Injuries Segmentation (PENGWIN) Challenge in MICCAI 2024, and the remaining sets of validation and evaluation data will be released after the competition. Welcome to [PENGWIN Challenge](https://pengwin.grand-challenge.org/)!**
 
 ## Usage
 
