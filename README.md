@@ -19,6 +19,8 @@ TMI PENGWIN DataSet: [TMI-PENGWIN DataSet](https://doi.org/10.5281/zenodo.109274
 
 You can find the training and testing methods for FracSegNet at [Training and inference](https://github.com/YzzLiu/FracSegNet/tree/main/code). Additionally, we provide the latest training models for your convenience.
 
+**Note: We are using this dataset to host the Pelvic Bone Fragments with Injuries Segmentation (PENGWIN) Challenge in MICCAI 2024, and the remaining sets of validation and evaluation data will be released after the competition. Welcome to [PENGWIN challenge](https://pengwin.grand-challenge.org/)!**
+
 ## Citation
 
 If you find our work is useful in your research, please consider citing:
