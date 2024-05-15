@@ -15,7 +15,7 @@ Paper link: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_30
 
 TMI PENGWIN DataSet: [TMI-PENGWIN DataSet](https://doi.org/10.5281/zenodo.10927452)
 
-**Note: We are using this dataset to host the Pelvic Bone Fragments with Injuries Segmentation (PENGWIN) Challenge in MICCAI 2024, and the remaining sets of validation and evaluation data will be released after the competition. Welcome to [PENGWIN challenge](https://pengwin.grand-challenge.org/)!**
+**Note: We are using this dataset to host the Pelvic Bone Fragments with Injuries Segmentation (PENGWIN) Challenge in MICCAI 2024, and the remaining sets of validation and evaluation data will be released after the competition. Welcome to [PENGWIN Challenge](https://pengwin.grand-challenge.org/)!**
 
 ## 2. Usage
 
