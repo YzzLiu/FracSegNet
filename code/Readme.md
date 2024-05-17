@@ -67,7 +67,7 @@ nnUNet_predict -m 3d_fullres -t TASK_ID -f FOLD -i INPUT_FOLDER -o OUTPUT_FOLDER
    nnUNet_predict -m 3d_cascade_fullres --disable_tta -t TASK_ID -f all -i INPUT_DIR -o OUTPUT_DIR
    ```
 4. **Extract CT Regions**  
-   Extract CT regions from the anatomical segmentation results using `extract_ct_regions.py`:
+   Extract CT regions from the anatomical segmentation results using `/inference/extract_ct_regions.py`:
    ```bash
    python /inference/extract_ct_regions.py -i INPUT_IMAGE -o OUTPUT_IMAGE
    ```
