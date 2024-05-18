@@ -7,7 +7,7 @@ This study proposes a deep-learning method for automatic pelvic fracture segment
 ## 1.Pelvic Fracture DataSets
 We built a dataset containing 150 CT scans with fractured pelvis and manually annotated the fractures. 
 
-The first version of the pelvic fracture segmentation dataset has been updated. In this dataset, we provide detailed annotations of fracture segmentation for 100 patients. For each patient, we offer CT data (with the background masked out) for the left ilium, right ilium, and sacrum, along with their annotations. 
+The first version of the pelvic fracture segmentation dataset has been updated. In this dataset, we provide detailed annotations of fracture segmentation for 100 patients. For each patient, we offer CT data (with the background masked out) for the left hipbone, right hipbone, and sacrum, along with their annotations. 
 
 Data Discription: [DataSet for Pelvic Fracture Segmentation](https://github.com/YzzLiu/FracSegNet/tree/main/DataSet)
 
